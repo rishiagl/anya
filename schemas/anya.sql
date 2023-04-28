@@ -1,0 +1,21 @@
+CREATE SCHEMA IF NOT EXISTS ANYA;
+
+CREATE OR REPLACE FUNCTION generate_custom_id(id INT, prefix character(1))
+returns text
+as
+$$
+  SELECT prefix || TO_CHAR(now(), 'YY')|| '_' ||
+  TO_CHAR(id,'FM000000');
+$$
+language sql
+immutable;
+
+CREATE TABLE IF NOT EXISTS ANYA.COMPANY(
+    ID INT PRIMARY KEY NOT NULL,
+    SHOP_ID text GENERATED ALWAYS AS ( generate_custom_id(id, 'C')) STORED,
+    NAME VARCHAR(100) NOT NULL,
+    ADDRESS VARCHAR(150) NOT NULL,
+    CITY VARCHAR(20) NOT NULL,
+    STATE VARCHAR(50) NOT NULL,
+    COUNTRY VARCHAR(20) NOT NULL
+);
