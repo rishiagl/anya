@@ -1,0 +1,160 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"include/drogon/trantor/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 301,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 307,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 309,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 311,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 329,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 339,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "lib",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"include/drogon/trantor/libtrantor.a"
+			],
+			"targetId" : "trantor::@1e598719a061c1f3c924",
+			"targetIndex" : 13,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/trantor",
+			"paths" : 
+			[
+				"build/include/drogon/trantor/exports/trantor/exports.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include/trantor/net",
+			"paths" : 
+			[
+				"include/drogon/trantor/trantor/net/EventLoop.h",
+				"include/drogon/trantor/trantor/net/EventLoopThread.h",
+				"include/drogon/trantor/trantor/net/EventLoopThreadPool.h",
+				"include/drogon/trantor/trantor/net/InetAddress.h",
+				"include/drogon/trantor/trantor/net/TcpClient.h",
+				"include/drogon/trantor/trantor/net/TcpConnection.h",
+				"include/drogon/trantor/trantor/net/TcpServer.h",
+				"include/drogon/trantor/trantor/net/callbacks.h",
+				"include/drogon/trantor/trantor/net/Resolver.h",
+				"include/drogon/trantor/trantor/net/Channel.h",
+				"include/drogon/trantor/trantor/net/Certificate.h",
+				"include/drogon/trantor/trantor/net/TLSPolicy.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "include/trantor/utils",
+			"paths" : 
+			[
+				"include/drogon/trantor/trantor/utils/AsyncFileLogger.h",
+				"include/drogon/trantor/trantor/utils/ConcurrentTaskQueue.h",
+				"include/drogon/trantor/trantor/utils/Date.h",
+				"include/drogon/trantor/trantor/utils/Funcs.h",
+				"include/drogon/trantor/trantor/utils/LockFreeQueue.h",
+				"include/drogon/trantor/trantor/utils/LogStream.h",
+				"include/drogon/trantor/trantor/utils/Logger.h",
+				"include/drogon/trantor/trantor/utils/MsgBuffer.h",
+				"include/drogon/trantor/trantor/utils/NonCopyable.h",
+				"include/drogon/trantor/trantor/utils/ObjectPool.h",
+				"include/drogon/trantor/trantor/utils/SerialTaskQueue.h",
+				"include/drogon/trantor/trantor/utils/TaskQueue.h",
+				"include/drogon/trantor/trantor/utils/TimingWheel.h",
+				"include/drogon/trantor/trantor/utils/Utilities.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "dev",
+			"destination" : "lib/cmake/Trantor",
+			"paths" : 
+			[
+				"build/include/drogon/trantor/CMakeFiles/TrantorConfig.cmake",
+				"build/include/drogon/trantor/TrantorConfigVersion.cmake",
+				"include/drogon/trantor/cmake_modules/Findc-ares.cmake",
+				"include/drogon/trantor/cmake_modules/FindBotan.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "dev",
+			"destination" : "lib/cmake/Trantor",
+			"exportName" : "TrantorTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "trantor::@1e598719a061c1f3c924",
+					"index" : 13
+				}
+			],
+			"paths" : 
+			[
+				"include/drogon/trantor/CMakeFiles/Export/e2741f8d78b158992c2d7ed6a282eae4/TrantorTargets.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "include/drogon/trantor",
+		"source" : "include/drogon/trantor"
+	}
+}

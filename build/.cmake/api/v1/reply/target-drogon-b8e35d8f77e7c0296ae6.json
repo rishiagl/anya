@@ -1,0 +1,1586 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "include/drogon/libdrogon.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"target_link_libraries",
+			"add_definitions",
+			"target_include_directories",
+			"set_target_properties",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"include/drogon/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 56,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 681,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 127,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 241,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 467,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 105,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 110,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 211,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 232,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 368,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 608,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 739,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=c++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "USE_OSSP_UUID=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "USE_REDIS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "/home/rishi-debian/github.com/rishiagl/anya/include/drogon/trantor"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/rishi-debian/github.com/rishiagl/anya/include/drogon/lib/inc"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/rishi-debian/github.com/rishiagl/anya/include/drogon/orm_lib/inc"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/rishi-debian/github.com/rishiagl/anya/include/drogon/nosql_lib/redis/inc"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/rishi-debian/github.com/rishiagl/anya/build/include/drogon"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/rishi-debian/github.com/rishiagl/anya/build/include/drogon/exports"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/rishi-debian/github.com/rishiagl/anya/build/include/drogon/trantor/exports"
+				},
+				{
+					"backtrace" : 8,
+					"isSystem" : true,
+					"path" : "/usr/include/jsoncpp"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/usr/include/uuid"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/usr/include/postgresql"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/usr/include/postgresql/13/server"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					11
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "trantor::@1e598719a061c1f3c924"
+		}
+	],
+	"id" : "drogon::@c10f8745750810c8a344",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"name" : "drogon",
+	"nameOnDisk" : "libdrogon.a",
+	"paths" : 
+	{
+		"build" : "include/drogon",
+		"source" : "include/drogon"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76
+			]
+		},
+		{
+			"name" : "Private Headers",
+			"sourceIndexes" : 
+			[
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128
+			]
+		},
+		{
+			"name" : "Public API",
+			"sourceIndexes" : 
+			[
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/AOPAdvice.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/CacheFile.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/ConfigLoader.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/Cookie.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/DrClassMap.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/DrTemplateBase.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/FiltersFunction.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/HttpAppFrameworkImpl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/HttpBinder.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/HttpClientImpl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/HttpControllersRouter.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/HttpFileImpl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/HttpFileUploadRequest.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/HttpRequestImpl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/HttpRequestParser.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/HttpResponseImpl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/HttpResponseParser.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/HttpServer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/HttpSimpleControllersRouter.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/HttpUtils.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/HttpViewData.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/IntranetIpFilter.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/ListenerManager.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/LocalHostFilter.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/MultiPart.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/NotFound.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/PluginsManager.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/RangeParser.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/SecureSSLRedirector.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/GlobalFilters.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/AccessLogger.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/RealIpResolver.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/SessionManager.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/StaticFileRouter.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/TaskTimeoutFlag.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/Utilities.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/WebSocketClientImpl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/WebSocketConnectionImpl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/WebsocketControllersRouter.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/RateLimiter.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/FixedWindowRateLimiter.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/SlidingWindowRateLimiter.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/TokenBucketRateLimiter.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/Hodor.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/drogon_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/ConfigAdapterManager.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/JsonConfigAdapter.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/YamlConfigAdapter.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/lib/src/SharedLibManager.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/orm_lib/src/postgresql_impl/PostgreSQLResultImpl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/orm_lib/src/postgresql_impl/PgListener.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/orm_lib/src/postgresql_impl/PgConnection.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/orm_lib/src/sqlite3_impl/Sqlite3Connection.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/orm_lib/src/sqlite3_impl/Sqlite3ResultImpl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/nosql_lib/redis/src/RedisClientImpl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/nosql_lib/redis/src/RedisClientLockFree.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/nosql_lib/redis/src/RedisClientManager.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/nosql_lib/redis/src/RedisConnection.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/nosql_lib/redis/src/RedisResult.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/nosql_lib/redis/src/RedisTransactionImpl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/nosql_lib/redis/src/SubscribeContext.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/nosql_lib/redis/src/RedisSubscriberImpl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/orm_lib/src/ArrayParser.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/orm_lib/src/Criteria.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/orm_lib/src/DbClient.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/orm_lib/src/DbClientImpl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/orm_lib/src/DbClientLockFree.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/orm_lib/src/DbConnection.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/orm_lib/src/DbListener.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/orm_lib/src/Exception.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/orm_lib/src/Field.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/orm_lib/src/Result.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/orm_lib/src/Row.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/orm_lib/src/SqlBinder.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/orm_lib/src/TransactionImpl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/orm_lib/src/RestfulController.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "include/drogon/orm_lib/src/DbClientManager.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/AOPAdvice.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/CacheFile.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/ConfigLoader.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/filesystem.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/FiltersFunction.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/HttpAppFrameworkImpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/HttpClientImpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/HttpControllersRouter.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/HttpFileImpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/HttpFileUploadRequest.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/HttpMessageBody.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/HttpRequestImpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/HttpRequestParser.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/HttpResponseImpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/HttpResponseParser.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/HttpServer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/HttpSimpleControllersRouter.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/HttpUtils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/impl_forwards.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/ListenerManager.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/PluginsManager.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/SessionManager.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/SpinLock.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/StaticFileRouter.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/TaskTimeoutFlag.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/WebSocketClientImpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/WebSocketConnectionImpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/WebsocketControllersRouter.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/FixedWindowRateLimiter.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/SlidingWindowRateLimiter.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/TokenBucketRateLimiter.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/ConfigAdapterManager.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/JsonConfigAdapter.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/YamlConfigAdapter.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/ConfigAdapter.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/SharedLibManager.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/src/postgresql_impl/PostgreSQLResultImpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/src/postgresql_impl/PgListener.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/src/postgresql_impl/PgConnection.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/src/sqlite3_impl/Sqlite3Connection.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/src/sqlite3_impl/Sqlite3ResultImpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/nosql_lib/redis/src/RedisClientImpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/nosql_lib/redis/src/RedisClientLockFree.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/nosql_lib/redis/src/RedisConnection.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/nosql_lib/redis/src/RedisTransactionImpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/nosql_lib/redis/src/SubscribeContext.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/nosql_lib/redis/src/RedisSubscriberImpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/src/DbClientManager.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/src/DbClientImpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/src/DbConnection.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/src/ResultImpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/src/TransactionImpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/Attribute.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/CacheMap.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/Cookie.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/DrClassMap.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/DrObject.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/DrTemplate.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/DrTemplateBase.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/HttpAppFramework.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/HttpBinder.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/HttpClient.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/HttpController.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/HttpFilter.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/HttpRequest.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/HttpResponse.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/HttpSimpleController.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/HttpTypes.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/HttpViewData.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/IntranetIpFilter.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/IOThreadStorage.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/LocalHostFilter.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/MultiPart.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/NotFound.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/Session.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/UploadFile.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/WebSocketClient.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/WebSocketConnection.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/WebSocketController.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/drogon.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/version.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/drogon_callbacks.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/PubSubService.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/drogon_test.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/RateLimiter.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "build/include/drogon/exports/drogon/exports.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/inc/drogon/orm/ArrayParser.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/inc/drogon/orm/Criteria.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/inc/drogon/orm/DbClient.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/inc/drogon/orm/DbListener.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/inc/drogon/orm/DbTypes.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/inc/drogon/orm/Exception.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/inc/drogon/orm/Field.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/inc/drogon/orm/FunctionTraits.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/inc/drogon/orm/Mapper.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/inc/drogon/orm/CoroMapper.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/inc/drogon/orm/Result.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/inc/drogon/orm/ResultIterator.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/inc/drogon/orm/Row.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/inc/drogon/orm/RowIterator.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/inc/drogon/orm/SqlBinder.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/orm_lib/inc/drogon/orm/RestfulController.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/utils/any.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/utils/apply.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/utils/coroutine.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/utils/FunctionTraits.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/utils/HttpConstraint.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/utils/optional.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/utils/OStringStream.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/utils/string_view.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/utils/Utilities.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/plugins/Plugin.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/plugins/SecureSSLRedirector.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/plugins/AccessLogger.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/plugins/RealIpResolver.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/plugins/Hodor.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/lib/inc/drogon/plugins/GlobalFilters.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/nosql_lib/redis/inc/drogon/nosql/RedisClient.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/nosql_lib/redis/inc/drogon/nosql/RedisResult.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/nosql_lib/redis/inc/drogon/nosql/RedisSubscriber.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 12,
+			"path" : "include/drogon/nosql_lib/redis/inc/drogon/nosql/RedisException.h",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}
