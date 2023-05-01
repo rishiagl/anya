@@ -39,6 +39,11 @@ int main()
     // {
     //     std::cerr << "error:" << e.base().what() << "\n";
     // }
+    drogon::app().registerBeginningAdvice([]()
+                                          {
+        LOG_DEBUG << "begin advice";
+        auto dbClient = drogon::app().getDbClient("postgres");
+        LOG_DEBUG<<"dbClient:"<<dbClient.get(); });
     drogon::app().run();
     std::cout.flush();
     std::cout << "Entered"
