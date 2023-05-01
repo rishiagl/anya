@@ -2,7 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=intellij+all,visualstudio,visualstudiocode,cmake,c,c++
 
 #do not ignore Makefile for setup
-!./Makefile
+!Makefile
 ### C ###
 # Prerequisites
 *.d
