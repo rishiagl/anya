@@ -8,8 +8,8 @@
 /* #undef OpenSSL_FOUND */
 /* #undef Boost_FOUND */
 
-#define COMPILATION_FLAGS "-std=c++17"
-#define COMPILER_COMMAND "/usr/bin/g++"
+#define COMPILATION_FLAGS "-g -std=c++17"
+#define COMPILER_COMMAND "/usr/bin/c++"
 #define COMPILER_ID "GNU"
 
 #define INCLUDING_DIRS " -I/usr/include/jsoncpp -I/usr/local/include"
