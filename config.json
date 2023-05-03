@@ -8,17 +8,19 @@
       ],
 
     "db_clients":[
-        {
-          "name":"postgres",
-          "rdbms": "postgresql",
-          "host": "127.0.0.1",
-          "port": 5432,
-          "dbname": "postgres",
-          "user": "postgres",
-          "passwd": "Rishi_58235",
-          "is_fast": false,
-          "connection_number": 4,
-          "filename": "postgres"
+      {
+        "name":"postgres",
+        "rdbms": "postgresql",
+        "host": "127.0.0.1",
+        "port": 5432,
+        "dbname": "postgres",
+        "user": "postgres",
+        "passwd": "Rishi_58235",
+        "is_fast": false,
+        "client_encoding": "",
+        "number_of_connections": 1,
+        "timeout": -1.0,
+        "auto_batch": false
         }
       ],
 
