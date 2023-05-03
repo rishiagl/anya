@@ -9,15 +9,15 @@
 #  ifndef DROGON_EXPORT
 #    ifdef drogon_EXPORTS
         /* We are building this library */
-#      define DROGON_EXPORT 
+#      define DROGON_EXPORT __attribute__((visibility("default")))
 #    else
         /* We are using this library */
-#      define DROGON_EXPORT 
+#      define DROGON_EXPORT __attribute__((visibility("default")))
 #    endif
 #  endif
 
 #  ifndef DROGON_NO_EXPORT
-#    define DROGON_NO_EXPORT 
+#    define DROGON_NO_EXPORT __attribute__((visibility("hidden")))
 #  endif
 #endif
 
