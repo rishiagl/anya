@@ -1,0 +1,256 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"third_party/drogon/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 681,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 687,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 706,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 713,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 725,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 736,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 777,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 795,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "lib",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"third_party/drogon/libdrogon.so.1.8.4",
+				"third_party/drogon/libdrogon.so.1"
+			],
+			"targetId" : "drogon::@6e272f8348db8d7abae2",
+			"targetIndex" : 46,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "lib",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"third_party/drogon/libdrogon.so"
+			],
+			"targetId" : "drogon::@6e272f8348db8d7abae2",
+			"targetIndex" : 46,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/drogon",
+			"paths" : 
+			[
+				"third_party/drogon/lib/inc/drogon/Attribute.h",
+				"third_party/drogon/lib/inc/drogon/CacheMap.h",
+				"third_party/drogon/lib/inc/drogon/Cookie.h",
+				"third_party/drogon/lib/inc/drogon/DrClassMap.h",
+				"third_party/drogon/lib/inc/drogon/DrObject.h",
+				"third_party/drogon/lib/inc/drogon/DrTemplate.h",
+				"third_party/drogon/lib/inc/drogon/DrTemplateBase.h",
+				"third_party/drogon/lib/inc/drogon/HttpAppFramework.h",
+				"third_party/drogon/lib/inc/drogon/HttpBinder.h",
+				"third_party/drogon/lib/inc/drogon/HttpClient.h",
+				"third_party/drogon/lib/inc/drogon/HttpController.h",
+				"third_party/drogon/lib/inc/drogon/HttpFilter.h",
+				"third_party/drogon/lib/inc/drogon/HttpRequest.h",
+				"third_party/drogon/lib/inc/drogon/HttpResponse.h",
+				"third_party/drogon/lib/inc/drogon/HttpSimpleController.h",
+				"third_party/drogon/lib/inc/drogon/HttpTypes.h",
+				"third_party/drogon/lib/inc/drogon/HttpViewData.h",
+				"third_party/drogon/lib/inc/drogon/IntranetIpFilter.h",
+				"third_party/drogon/lib/inc/drogon/IOThreadStorage.h",
+				"third_party/drogon/lib/inc/drogon/LocalHostFilter.h",
+				"third_party/drogon/lib/inc/drogon/MultiPart.h",
+				"third_party/drogon/lib/inc/drogon/NotFound.h",
+				"third_party/drogon/lib/inc/drogon/Session.h",
+				"third_party/drogon/lib/inc/drogon/UploadFile.h",
+				"third_party/drogon/lib/inc/drogon/WebSocketClient.h",
+				"third_party/drogon/lib/inc/drogon/WebSocketConnection.h",
+				"third_party/drogon/lib/inc/drogon/WebSocketController.h",
+				"third_party/drogon/lib/inc/drogon/drogon.h",
+				"third_party/drogon/lib/inc/drogon/version.h",
+				"third_party/drogon/lib/inc/drogon/drogon_callbacks.h",
+				"third_party/drogon/lib/inc/drogon/PubSubService.h",
+				"third_party/drogon/lib/inc/drogon/drogon_test.h",
+				"third_party/drogon/lib/inc/drogon/RateLimiter.h",
+				"build/third_party/drogon/exports/drogon/exports.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include/drogon/orm",
+			"paths" : 
+			[
+				"third_party/drogon/orm_lib/inc/drogon/orm/ArrayParser.h",
+				"third_party/drogon/orm_lib/inc/drogon/orm/Criteria.h",
+				"third_party/drogon/orm_lib/inc/drogon/orm/DbClient.h",
+				"third_party/drogon/orm_lib/inc/drogon/orm/DbListener.h",
+				"third_party/drogon/orm_lib/inc/drogon/orm/DbTypes.h",
+				"third_party/drogon/orm_lib/inc/drogon/orm/Exception.h",
+				"third_party/drogon/orm_lib/inc/drogon/orm/Field.h",
+				"third_party/drogon/orm_lib/inc/drogon/orm/FunctionTraits.h",
+				"third_party/drogon/orm_lib/inc/drogon/orm/Mapper.h",
+				"third_party/drogon/orm_lib/inc/drogon/orm/CoroMapper.h",
+				"third_party/drogon/orm_lib/inc/drogon/orm/Result.h",
+				"third_party/drogon/orm_lib/inc/drogon/orm/ResultIterator.h",
+				"third_party/drogon/orm_lib/inc/drogon/orm/Row.h",
+				"third_party/drogon/orm_lib/inc/drogon/orm/RowIterator.h",
+				"third_party/drogon/orm_lib/inc/drogon/orm/SqlBinder.h",
+				"third_party/drogon/orm_lib/inc/drogon/orm/RestfulController.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "include/drogon/nosql",
+			"paths" : 
+			[
+				"third_party/drogon/nosql_lib/redis/inc/drogon/nosql/RedisClient.h",
+				"third_party/drogon/nosql_lib/redis/inc/drogon/nosql/RedisResult.h",
+				"third_party/drogon/nosql_lib/redis/inc/drogon/nosql/RedisSubscriber.h",
+				"third_party/drogon/nosql_lib/redis/inc/drogon/nosql/RedisException.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "include/drogon/utils",
+			"paths" : 
+			[
+				"third_party/drogon/lib/inc/drogon/utils/any.h",
+				"third_party/drogon/lib/inc/drogon/utils/apply.h",
+				"third_party/drogon/lib/inc/drogon/utils/coroutine.h",
+				"third_party/drogon/lib/inc/drogon/utils/FunctionTraits.h",
+				"third_party/drogon/lib/inc/drogon/utils/HttpConstraint.h",
+				"third_party/drogon/lib/inc/drogon/utils/optional.h",
+				"third_party/drogon/lib/inc/drogon/utils/OStringStream.h",
+				"third_party/drogon/lib/inc/drogon/utils/string_view.h",
+				"third_party/drogon/lib/inc/drogon/utils/Utilities.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "include/drogon/plugins",
+			"paths" : 
+			[
+				"third_party/drogon/lib/inc/drogon/plugins/Plugin.h",
+				"third_party/drogon/lib/inc/drogon/plugins/SecureSSLRedirector.h",
+				"third_party/drogon/lib/inc/drogon/plugins/AccessLogger.h",
+				"third_party/drogon/lib/inc/drogon/plugins/RealIpResolver.h",
+				"third_party/drogon/lib/inc/drogon/plugins/Hodor.h",
+				"third_party/drogon/lib/inc/drogon/plugins/GlobalFilters.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "dev",
+			"destination" : "lib/cmake/Drogon",
+			"paths" : 
+			[
+				"build/third_party/drogon/CMakeFiles/DrogonConfig.cmake",
+				"build/third_party/drogon/DrogonConfigVersion.cmake",
+				"third_party/drogon/cmake_modules/FindUUID.cmake",
+				"third_party/drogon/cmake_modules/FindJsoncpp.cmake",
+				"third_party/drogon/cmake_modules/FindSQLite3.cmake",
+				"third_party/drogon/cmake_modules/FindMySQL.cmake",
+				"third_party/drogon/cmake_modules/Findpg.cmake",
+				"third_party/drogon/cmake_modules/FindBrotli.cmake",
+				"third_party/drogon/cmake_modules/Findcoz-profiler.cmake",
+				"third_party/drogon/cmake_modules/FindHiredis.cmake",
+				"third_party/drogon/cmake_modules/FindFilesystem.cmake",
+				"third_party/drogon/cmake/DrogonUtilities.cmake",
+				"third_party/drogon/cmake/ParseAndAddDrogonTests.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "dev",
+			"destination" : "lib/cmake/Drogon",
+			"exportName" : "DrogonTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "drogon::@6e272f8348db8d7abae2",
+					"index" : 46
+				}
+			],
+			"paths" : 
+			[
+				"third_party/drogon/CMakeFiles/Export/9fe51f2b716a6bd37518a903e3e9a4cf/DrogonTargets.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "third_party/drogon",
+		"source" : "third_party/drogon"
+	}
+}

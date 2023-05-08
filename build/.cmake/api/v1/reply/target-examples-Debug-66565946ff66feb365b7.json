@@ -1,0 +1,123 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"third_party/rapidjson/example/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 46,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "capitalize::@02f02312d76b0f9da547"
+		},
+		{
+			"id" : "condense::@02f02312d76b0f9da547"
+		},
+		{
+			"id" : "filterkey::@02f02312d76b0f9da547"
+		},
+		{
+			"id" : "filterkeydom::@02f02312d76b0f9da547"
+		},
+		{
+			"id" : "jsonx::@02f02312d76b0f9da547"
+		},
+		{
+			"id" : "lookaheadparser::@02f02312d76b0f9da547"
+		},
+		{
+			"id" : "messagereader::@02f02312d76b0f9da547"
+		},
+		{
+			"id" : "parsebyparts::@02f02312d76b0f9da547"
+		},
+		{
+			"id" : "pretty::@02f02312d76b0f9da547"
+		},
+		{
+			"id" : "prettyauto::@02f02312d76b0f9da547"
+		},
+		{
+			"id" : "schemavalidator::@02f02312d76b0f9da547"
+		},
+		{
+			"id" : "serialize::@02f02312d76b0f9da547"
+		},
+		{
+			"id" : "simpledom::@02f02312d76b0f9da547"
+		},
+		{
+			"id" : "simplereader::@02f02312d76b0f9da547"
+		},
+		{
+			"id" : "simplepullreader::@02f02312d76b0f9da547"
+		},
+		{
+			"id" : "simplewriter::@02f02312d76b0f9da547"
+		},
+		{
+			"id" : "sortkeys::@02f02312d76b0f9da547"
+		},
+		{
+			"id" : "tutorial::@02f02312d76b0f9da547"
+		}
+	],
+	"id" : "examples::@02f02312d76b0f9da547",
+	"name" : "examples",
+	"paths" : 
+	{
+		"build" : "third_party/rapidjson/example",
+		"source" : "third_party/rapidjson/example"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/third_party/rapidjson/example/CMakeFiles/examples",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/third_party/rapidjson/example/CMakeFiles/examples.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

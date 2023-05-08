@@ -1,7 +1,7 @@
 #include <dblib/database.hpp>
 
 drogon::orm::DbClientPtr pgclient;
-void dblib::storeDBClient(drogon::orm::DbClientPtr dbclient)
+void dblib::storeDBClient(drogon::orm::DbClientPtr& dbclient)
 {
     pgclient = dbclient;
 }

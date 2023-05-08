@@ -24,9 +24,10 @@ add_executable(${PROJECT_NAME} main.cc)
 # ##############################################################################
 # If you include the drogon source code locally in your project, use this method
 # to add drogon 
-add_subdirectory(include/drogon) 
+add_subdirectory(third_party/rapidjson)
+add_subdirectory(third_party/drogon)
 add_subdirectory(dblib)
-target_link_libraries(${PROJECT_NAME} PRIVATE drogon dblib)
+target_link_libraries(${PROJECT_NAME} PRIVATE RapidJSON drogon dblib)
 #
 # and comment out the following lines
 # find_package(Drogon CONFIG REQUIRED)

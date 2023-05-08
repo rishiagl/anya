@@ -24,7 +24,7 @@ int main()
                                               //   }
                                               //   LOG_DEBUG << "dbClient:" << dbClient.get();
                                               //   LOG_DEBUG<<"company_id for id = 1 = "<< cid;
-                                            auto dbClient = drogon::app().getDbClient("postgres");
+                                            const auto dbClient = drogon::app().getDbClient("postgres");
                                             dblib::storeDBClient(dbClient);
                                             LOG_DEBUG << dblib::getCompanyIdbyId(1); });
     drogon::app().run();
