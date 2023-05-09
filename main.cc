@@ -1,6 +1,6 @@
 #include <drogon/drogon.h>
 #include <iostream>
-#include <dblib/database.hpp>
+#include "models/database.hpp"
 
 int main()
 {
@@ -24,9 +24,9 @@ int main()
                                               //   }
                                               //   LOG_DEBUG << "dbClient:" << dbClient.get();
                                               //   LOG_DEBUG<<"company_id for id = 1 = "<< cid;
-                                            const auto dbClient = drogon::app().getDbClient("postgres");
-                                            dblib::storeDBClient(dbClient);
-                                            LOG_DEBUG << dblib::getCompanyIdbyId(1); });
+                                            auto dbClient = drogon::app().getDbClient("postgres");
+                                            models::storeDBClient(dbClient);
+                                            LOG_DEBUG << models::getCompanyIdbyId(1); });
     drogon::app().run();
     return 0;
 }

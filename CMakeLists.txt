@@ -21,17 +21,25 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_executable(${PROJECT_NAME} main.cc)
 
+include(FetchContent)
+
+FetchContent_Declare(
+  glaze
+  GIT_REPOSITORY https://github.com/stephenberry/glaze.git
+  GIT_TAG main
+  GIT_SHALLOW TRUE
+)
+
+FetchContent_MakeAvailable(glaze)
 # ##############################################################################
 # If you include the drogon source code locally in your project, use this method
 # to add drogon 
-add_subdirectory(third_party/rapidjson)
-add_subdirectory(third_party/drogon)
-add_subdirectory(dblib)
-target_link_libraries(${PROJECT_NAME} PRIVATE RapidJSON drogon dblib)
+# add_subdirectory(dblib)
+# target_link_libraries(${PROJECT_NAME} PRIVATE RapidJSON drogon dblib)
 #
 # and comment out the following lines
-# find_package(Drogon CONFIG REQUIRED)
-# target_link_libraries(${PROJECT_NAME} PRIVATE Drogon::Drogon)
+find_package(Drogon CONFIG REQUIRED)
+target_link_libraries(${PROJECT_NAME} PRIVATE Drogon::Drogon glaze::glaze)
 
 # ##############################################################################
 
@@ -61,9 +69,10 @@ drogon_create_views(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/views
 # drogon_create_views(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/views
 #                     ${CMAKE_CURRENT_BINARY_DIR} TRUE CHANGE_ME)
 
-target_include_directories(${PROJECT_NAME}
-                           PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}
-                                   ${CMAKE_CURRENT_SOURCE_DIR}/models)
+#--comented by me--
+# target_include_directories(${PROJECT_NAME}
+#                            PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}
+#                                    ${CMAKE_CURRENT_SOURCE_DIR}/models)
 target_sources(${PROJECT_NAME}
                PRIVATE
                ${SRC_DIR}
@@ -77,4 +86,4 @@ target_sources(${PROJECT_NAME}
 
 # ##############################################################################
 
-add_subdirectory(test)
+# add_subdirectory(test)
