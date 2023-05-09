@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <vector>
 #include "database.hpp"
 
 namespace models::company
@@ -16,9 +17,9 @@ namespace models::company
         std::string country;
     } attributes;
 
-    attributes get();
-    attributes get(int id);
-    //attributes get(std::string company_id);
+    std::vector<attributes> get();
+    std::string add(attributes);
+    attributes get(std::string id);
 }
 
 template <>
