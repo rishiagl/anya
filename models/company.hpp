@@ -15,8 +15,8 @@ namespace models::company
         std::string city;
         std::string state;
         std::string country;
-        std::string cin_no;
-        std::string pan_no;
+        std::string cin;
+        std::string pan;
         std::string gstin;
     } attributes;
 
@@ -31,5 +31,5 @@ template <>
 struct glz::meta<models::company::attributes>
 {
     using T = models::company::attributes;
-    static constexpr auto value = object("pid", &T::pid, "sid", &T::sid, "name", &T::name, "address", &T::address, "city", &T::city, "state", &T::state, "country", &T::country, "cin_no", &T::cin_no, "pan_no", &T::pan_no, "gstin", &T::gstin);
+    static constexpr auto value = object("pid", &T::pid, "sid", &T::sid, "name", &T::name, "address", &T::address, "city", &T::city, "state", &T::state, "country", &T::country, "cin", &T::cin, "pan", &T::pan, "gstin", &T::gstin);
 };

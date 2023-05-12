@@ -6,7 +6,6 @@
 
 namespace models
 {
-    void storeDBClient(drogon::orm::DbClientPtr& dbclient);
+    void storeDBClient(drogon::orm::DbClientPtr &dbclient);
     drogon::orm::DbClientPtr getDBClient();
-    std::string getCompanyIdbyId(int id);
 }

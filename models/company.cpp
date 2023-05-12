@@ -19,8 +19,8 @@ std::vector<attributes> models::company::get()
             att.city = row["city"].as<std::string>();
             att.state = row["state"].as<std::string>();
             att.country = row["country"].as<std::string>();
-            att.cin_no = row["cin_no"].as<std::string>();
-            att.pan_no = row["pan_no"].as<std::string>();
+            att.cin = row["cin"].as<std::string>();
+            att.pan = row["pan"].as<std::string>();
             att.gstin = row["gstin"].as<std::string>();
             att_arr.push_back(att);
         }
@@ -39,7 +39,7 @@ std::string models::company::add(attributes att)
     std::string sid;
     try
     {
-        auto result = db->execSqlSync("INSERT INTO anya.company(name, address, city, state, country, cin_no, pan_no, gstin) VALUES($1, $2, $3, $4, $5, $6, $7, $8) RETURNING sid", att.name, att.address, att.city, att.state, att.country, att.cin_no, att.pan_no, att.gstin);
+        auto result = db->execSqlSync("INSERT INTO anya.company(name, address, city, state, country, cin, pan, gstin) VALUES($1, $2, $3, $4, $5, $6, $7, $8) RETURNING sid", att.name, att.address, att.city, att.state, att.country, att.cin, att.pan, att.gstin);
         for (auto row : result)
         {
             sid = row["sid"].as<std::string>();
@@ -69,8 +69,8 @@ attributes models::company::get(std::string sid)
             att.city = row["city"].as<std::string>();
             att.state = row["state"].as<std::string>();
             att.country = row["country"].as<std::string>();
-            att.cin_no = row["cin_no"].as<std::string>();
-            att.pan_no = row["pan_no"].as<std::string>();
+            att.cin = row["cin"].as<std::string>();
+            att.pan = row["pan"].as<std::string>();
             att.gstin = row["gstin"].as<std::string>();
         }
     }
@@ -87,7 +87,7 @@ void models::company::update(attributes att, std::string sid)
     auto db = models::getDBClient();
     try
     {
-        db->execSqlSync("UPDATE anya.company SET name=$1, address=$2, city=$3, state=$4, country=$5, cin_no=$6, pan_no=$7, gstin=$8 WHERE sid=$9", att.name, att.address, att.city, att.state, att.country, att.cin_no, att.pan_no, att.gstin, sid);
+        db->execSqlSync("UPDATE anya.company SET name=$1, address=$2, city=$3, state=$4, country=$5, cin=$6, pan=$7, gstin=$8 WHERE sid=$9", att.name, att.address, att.city, att.state, att.country, att.cin, att.pan, att.gstin, sid);
     }
     catch (const drogon::orm::DrogonDbException &e)
     {

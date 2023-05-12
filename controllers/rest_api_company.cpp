@@ -29,8 +29,8 @@ void company::create(const HttpRequestPtr &req,
         att.city = (*json)["city"].asString();
         att.state = (*json)["state"].asString();
         att.country = (*json)["country"].asString();
-        att.cin_no = (*json)["cin_no"].asString();
-        att.pan_no = (*json)["pan_no"].asString();
+        att.cin = (*json)["cin"].asString();
+        att.pan = (*json)["pan"].asString();
         att.gstin = (*json)["gstin"].asString();
     }
     std::string sid = models::company::add(att);
@@ -69,8 +69,8 @@ void company::updateOne(const HttpRequestPtr &req,
         att.city = (*json)["city"].asString();
         att.state = (*json)["state"].asString();
         att.country = (*json)["country"].asString();
-        att.cin_no = (*json)["cin_no"].asString();
-        att.pan_no = (*json)["pan_no"].asString();
+        att.cin = (*json)["cin"].asString();
+        att.pan = (*json)["pan"].asString();
         att.gstin = (*json)["gstin"].asString();
     }
     models::company::update(att, sid);
