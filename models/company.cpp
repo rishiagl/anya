@@ -1,26 +1,28 @@
 #include "company.hpp"
-#include <vector>
 
 using namespace models::company;
 
 std::vector<attributes> models::company::get()
 {
-    drogon::orm::DbClientPtr db = models::getDBClient();
-    std::vector<attributes> c_att_arr;
+    auto db = models::getDBClient();
+    std::vector<attributes> att_arr;
     try
     {
         auto result = db->execSqlSync("SELECT * FROM anya.company");
         for (auto row : result)
         {
-            attributes c_att{};
-            c_att.id = row["id"].as<int>();
-            c_att.company_id = row["company_id"].as<std::string>();
-            c_att.name = row["name"].as<std::string>();
-            c_att.address = row["address"].as<std::string>();
-            c_att.city = row["city"].as<std::string>();
-            c_att.state = row["state"].as<std::string>();
-            c_att.country = row["country"].as<std::string>();
-            c_att_arr.push_back(c_att);
+            attributes att{};
+            att.pid = row["pid"].as<int>();
+            att.sid = row["sid"].as<std::string>();
+            att.name = row["name"].as<std::string>();
+            att.address = row["address"].as<std::string>();
+            att.city = row["city"].as<std::string>();
+            att.state = row["state"].as<std::string>();
+            att.country = row["country"].as<std::string>();
+            att.cin_no = row["cin_no"].as<std::string>();
+            att.pan_no = row["pan_no"].as<std::string>();
+            att.gstin = row["gstin"].as<std::string>();
+            att_arr.push_back(att);
         }
     }
     catch (const drogon::orm::DrogonDbException &e)
@@ -28,19 +30,19 @@ std::vector<attributes> models::company::get()
         LOG_DEBUG << "ERROR CATCHED";
         std::cerr << "error:" << e.base().what() << std::endl;
     }
-    return c_att_arr;
+    return att_arr;
 }
 
-std::string models::company::add(attributes c_att)
+std::string models::company::add(attributes att)
 {
-    drogon::orm::DbClientPtr db = models::getDBClient();
-    std::string cid;
+    auto db = models::getDBClient();
+    std::string sid;
     try
     {
-        auto result = db->execSqlSync("INSERT INTO anya.company(name, address, city, state, country) VALUES($1, $2, $3, $4, $5) RETURNING company_id", c_att.name, c_att.address, c_att.city, c_att.state, c_att.country);
+        auto result = db->execSqlSync("INSERT INTO anya.company(name, address, city, state, country, cin_no, pan_no, gstin) VALUES($1, $2, $3, $4, $5, $6, $7, $8) RETURNING sid", att.name, att.address, att.city, att.state, att.country, att.cin_no, att.pan_no, att.gstin);
         for (auto row : result)
         {
-            cid = row["company_id"].as<std::string>();
+            sid = row["sid"].as<std::string>();
         }
     }
     catch (const drogon::orm::DrogonDbException &e)
@@ -48,25 +50,28 @@ std::string models::company::add(attributes c_att)
         LOG_DEBUG << "ERROR CATCHED";
         std::cerr << "error:" << e.base().what() << std::endl;
     }
-    return cid;
+    return sid;
 }
 
-attributes models::company::get(std::string cid)
+attributes models::company::get(std::string sid)
 {
-    drogon::orm::DbClientPtr db = models::getDBClient();
-    attributes c_att{};
-    c_att.company_id = cid;
+    auto db = models::getDBClient();
+    attributes att{};
+    att.sid = sid;
     try
     {
-        auto result = db->execSqlSync("SELECT * FROM anya.company WHERE company_id=$1 ", cid);
+        auto result = db->execSqlSync("SELECT * FROM anya.company WHERE sid=$1 ", sid);
         for (auto row : result)
         {
-            c_att.id = row["id"].as<int>();
-            c_att.name = row["name"].as<std::string>();
-            c_att.address = row["address"].as<std::string>();
-            c_att.city = row["city"].as<std::string>();
-            c_att.state = row["state"].as<std::string>();
-            c_att.country = row["country"].as<std::string>();
+            att.pid = row["pid"].as<int>();
+            att.name = row["name"].as<std::string>();
+            att.address = row["address"].as<std::string>();
+            att.city = row["city"].as<std::string>();
+            att.state = row["state"].as<std::string>();
+            att.country = row["country"].as<std::string>();
+            att.cin_no = row["cin_no"].as<std::string>();
+            att.pan_no = row["pan_no"].as<std::string>();
+            att.gstin = row["gstin"].as<std::string>();
         }
     }
     catch (const drogon::orm::DrogonDbException &e)
@@ -74,5 +79,37 @@ attributes models::company::get(std::string cid)
         LOG_DEBUG << "ERROR CATCHED";
         std::cerr << "error:" << e.base().what() << std::endl;
     }
-    return c_att;
+    return att;
+}
+
+void models::company::update(attributes att, std::string sid)
+{
+    auto db = models::getDBClient();
+    try
+    {
+        db->execSqlSync("UPDATE anya.company SET name=$1, address=$2, city=$3, state=$4, country=$5, cin_no=$6, pan_no=$7, gstin=$8 WHERE sid=$9", att.name, att.address, att.city, att.state, att.country, att.cin_no, att.pan_no, att.gstin, sid);
+    }
+    catch (const drogon::orm::DrogonDbException &e)
+    {
+        LOG_DEBUG << "ERROR CATCHED";
+        std::cerr << "error:" << e.base().what() << std::endl;
+    }
+    return;
+}
+
+void models::company::remove(std::string sid)
+{
+    auto db = models::getDBClient();
+    db->execSqlAsync(
+        "DELETE FROM anya.company where sid=$1",
+        [](const drogon::orm::Result &result)
+        {
+            LOG_DEBUG << result.affectedRows();
+        },
+        [](const drogon::orm::DrogonDbException &e)
+        {
+            std::cerr << "error:" << e.base().what() << std::endl;
+        },
+        sid);
+    return;
 }
