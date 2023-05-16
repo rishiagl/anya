@@ -1,6 +1,6 @@
 #include <drogon/drogon.h>
 #include <iostream>
-#include "models/database.hpp"
+#include "database/database.hpp"
 
 int main()
 {
@@ -9,7 +9,7 @@ int main()
                                           {
                                             LOG_DEBUG << "Server started";
                                             auto dbClient = drogon::app().getDbClient("postgres");
-                                            models::storeDBClient(dbClient); });
+                                            database::storeDBClient(dbClient); });
     drogon::app().run();
     return 0;
 }

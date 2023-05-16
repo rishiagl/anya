@@ -18,9 +18,9 @@ CREATE TABLE IF NOT EXISTS anya.company(
     city text,
     state text,
     country text,
-    cin CHAR(21) UNIQUE CONSTRAINT cin_check CHECK (char_length(cin) == 21),
-    pan CHAR(10) UNIQUE CONSTRAINT pan_check CHECK (char_length(pan) == 10),
-    gstin CHAR(15) UNIQUE CONSTRAINT gstin_check CHECK (char_length(gstin) == 15),
+    cin CHAR(21) UNIQUE CONSTRAINT cin_check CHECK (char_length(cin) = 21),
+    pan CHAR(10) UNIQUE CONSTRAINT pan_check CHECK (char_length(pan) = 10),
+    gstin CHAR(15) UNIQUE CONSTRAINT gstin_check CHECK (char_length(gstin) = 15)
 );
 INSERT INTO anya.company(name) VALUES('Primary');
 
