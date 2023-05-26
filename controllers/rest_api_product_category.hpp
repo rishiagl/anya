@@ -1,8 +1,11 @@
 #pragma once
 
 #include <drogon/HttpController.h>
+#include <drogon/utils/coroutine.h>
+#include <coroutine>
 
 using namespace drogon;
+
 namespace rest
 {
   namespace api
@@ -12,7 +15,7 @@ namespace rest
     public:
       METHOD_LIST_BEGIN
 
-      METHOD_ADD(product_category::get, "", Get, Options);
+      METHOD_ADD(product_category::get, "", Get);
       METHOD_ADD(product_category::create, "", Post, Options);
       METHOD_ADD(product_category::getOne, "/{sid}", Get, Options);
       METHOD_ADD(product_category::updateOne, "/{sid}", Put, Options);
@@ -20,19 +23,11 @@ namespace rest
 
       METHOD_LIST_END
 
-      void getOne(const HttpRequestPtr &req,
-                  std::function<void(const HttpResponsePtr &)> &&callback,
-                  std::string &&sid);
-      void updateOne(const HttpRequestPtr &req,
-                     std::function<void(const HttpResponsePtr &)> &&callback,
-                     std::string &&sid);
-      void deleteOne(const HttpRequestPtr &req,
-                     std::function<void(const HttpResponsePtr &)> &&callback,
-                     std::string &&sid);
-      void get(const HttpRequestPtr &req,
-               std::function<void(const HttpResponsePtr &)> &&callback);
-      void create(const HttpRequestPtr &req,
-                  std::function<void(const HttpResponsePtr &)> &&callback);
+      drogon::Task<HttpResponsePtr> getOne(const HttpRequestPtr req, std::string sid);
+      drogon::Task<HttpResponsePtr> updateOne(const HttpRequestPtr req, std::string sid);
+      drogon::Task<HttpResponsePtr> deleteOne(const HttpRequestPtr req, std::string sid);
+      drogon::Task<HttpResponsePtr> get(const HttpRequestPtr req);
+      drogon::Task<HttpResponsePtr> create(const HttpRequestPtr req);
     };
   }
 }
