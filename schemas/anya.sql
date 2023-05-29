@@ -60,4 +60,18 @@ CREATE TABLE IF NOT EXISTS anya.product(
     type_of_supply anya.supply_type DEFAULT 'goods',
     UNIQUE (name, brand_sid, category_sid)
 );
+INSERT INTO anya.product(name) VALUES('primary');
+
+CREATE TABLE IF NOT EXISTS anya.account(
+    pid SERIAL PRIMARY KEY,
+    sid text UNIQUE GENERATED ALWAYS AS ( generate_custom_sid(pid, 'A')) STORED,
+    name text NOT NULL,
+    usrname text NOT NULL UNIQUE,
+    passwd text NOT NULL UNIQUE,
+    UNIQUE (usrname, passwd)
+);
+INSERT INTO anya.account(name, usrname, passwd) VALUES('admin', 'admin', 'admin');
+
+
+
 

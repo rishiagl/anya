@@ -59,6 +59,15 @@ namespace entity
         std::string tax_class_code;
         std::string type_of_supply;
     } product;
+
+    typedef struct account
+    {
+        int pid;
+        std::string sid;
+        std::string name;
+        std::string usrname;
+        std::string passwd;
+    } account;
 }
 
 template <>
@@ -94,4 +103,11 @@ struct glz::meta<entity::product>
 {
     using T = entity::product;
     static constexpr auto value = object("pid", &T::pid, "sid", &T::sid, "name", &T::name, "brand_sid", &T::brand_sid, "category_sid", &T::category_sid, "tax_class_code", &T::tax_class_code, "type_of_supply", &T::type_of_supply);
+};
+
+template <>
+struct glz::meta<entity::account>
+{
+    using T = entity::account;
+    static constexpr auto value = object("pid", &T::pid, "sid", &T::sid, "name", &T::name, "usrname", &T::usrname, "passwd", &T::passwd);
 };
