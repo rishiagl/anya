@@ -1,6 +1,6 @@
 # Anya
 
-Anya is a Business Management Tool that can any perform any function that a modern-day ERP(Enterprise Resource Planning) or CRM(Customer Resource Management) should perform.
+Anya is a Business Management Tool that can perform any function that a modern-day ERP(Enterprise Resource Planning) or CRM(Customer Resource Management) should perform.
 
 She is built using the most elegant and fast tech stack:
 * C++20
@@ -8,9 +8,7 @@ She is built using the most elegant and fast tech stack:
 * Postgresql
 * glaze-json
 
-## Current-Status: 
-
-CRUD api's are available for the following resources:
+## API Reference
 
 ### Company:
 
@@ -37,6 +35,8 @@ prefix = http://<ip-address>:<port-number>/rest/api/company
 | --- | ------------ | --- | -------------------- | --------------------  |
 | <prefix> | GET | Get all Companies | None | JSON|
 | <prefix> | POST | Add single company | JSON | Plain Text | 
-| <prefix>/{sid} | GET | Get a single company | None | JSON |
-| <prefix>/{sid} | PUT | Update a single company | JSON | Plain Text |
-| <prefix>/{sid} | DELETE | Delete a single company | None | Plain Text |
+| <prefix>/{pid} | GET | Get a single company | None | JSON |
+| <prefix>/{pid} | PUT | Update a single company | JSON | Plain Text |
+| <prefix>/{pid} | DELETE | Delete a single company | None | Plain Text |
+
+Like-wise much more real-world entity's CRUD API has been implemented which will be documented in further iterations.
