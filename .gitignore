@@ -1,8 +1,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/intellij+all,visualstudio,visualstudiocode,cmake,c,c++
 # Edit at https://www.toptal.com/developers/gitignore?templates=intellij+all,visualstudio,visualstudiocode,cmake,c,c++
 
-#do not ignore Makefile for setup
-!Makefile
 ### C ###
 # Prerequisites
 *.d
@@ -564,3 +562,7 @@ FodyWeavers.xsd
 
 #hiding config.json as it contains server info
 config.json
+
+#Do not ignore setup Makefile
+!setup/Makefile
+
