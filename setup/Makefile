@@ -1,7 +1,7 @@
 null :
-	echo "Please provide some command"
+	echo "Please provide any one of the command:- install or postgres"
 
-.phony : env-setup extras database install-drogon postgres
+.phony : env-setup extras database install postgres
 
 env-setup :
 	sudo apt install git -y;
@@ -22,13 +22,12 @@ database:
 	sudo apt-get install libhiredis-dev;
 
 postgres:
-	sudo apt-get install lsb-release;\
-	sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'\
-	wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add - \
-	sudo apt-get update; \
-	sudo apt-get -y install postgresql; \
-	sudo apt-get install libpq-dev; \
-	sudo apt-get -y install libpq-dev postgresql-server-dev-all;
+	sudo apt-get -y install lsb-release gnupg;\
+	sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list';\
+	wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add - ;\
+	sudo apt-get update;\
+	sudo apt-get -y install postgresql libpq-dev postgresql-server-dev-all; \
+	sudo apt update;
 
 
 install: env-setup extras
