@@ -1,0 +1,60 @@
+{
+    "listeners": [
+        {
+          "address": "localhost",
+          "port": 2023,
+          "https": false
+        }
+      ],
+
+    "db_clients":[
+      {
+        "name":"postgres",
+        "rdbms": "postgresql",
+        "host": "127.0.0.1",
+        "port": 5432,
+        "dbname": "postgres",
+        "user": "postgres",
+        "passwd": "",
+        "is_fast": false,
+        "client_encoding": "",
+        "number_of_connections": 1,
+        "timeout": -1.0,
+        "auto_batch": false
+        }
+      ],
+
+    "document_root": "./",
+
+    "file_types": [
+        "gif",
+        "png",
+        "jpg",
+        "js",
+        "css",
+        "html",
+        "ico",
+        "swf",
+        "xap",
+        "apk",
+        "cur",
+        "xml"
+      ],
+
+      "mime" : {
+        "text/markdown": "md",
+        "text/gemini": ["gmi", "gemini"]
+      },
+
+      "log": {
+        "log_path": "./log",
+        "logfile_base_name": "anya_log",
+        "log_size_limit": 100000000,
+        "log_level": "TRACE"
+      },
+
+      "run_as_daemon": false,
+      "relaunch_on_error": false,
+
+      "use_gzip": true
+}

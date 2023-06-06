@@ -86,6 +86,9 @@ Follow the below steps:
         ```bash
         \q
         ```
+    - Change config.json
+
+        In anya-cxx(root) directory you'll find a file named config.json, in line no 18 add the \<new_password> which you added in 2 steps back.
     
     Now your postgresSQL is up and running with very very minimal configuration, for production use please read further blog on Securing your postgresSQL server.
 
@@ -95,7 +98,7 @@ Follow the below steps:
     ```bash
     make install;
     ```
-
+    
 - **Step 5: Build and Run**
     (Assuming you are in setup directory)
 
