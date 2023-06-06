@@ -4,7 +4,7 @@ CREATE OR REPLACE FUNCTION generate_custom_sid(id INT, prefix character(1))
 returns text
 as
 $$
-  SELECT prefix || TO_CHAR(now(), 'YY')|| '_' ||
+  SELECT prefix || TO_CHAR(now(), 'YY') || '_' ||
   TO_CHAR(id,'FM000000');
 $$
 language sql
