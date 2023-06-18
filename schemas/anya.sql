@@ -67,10 +67,18 @@ CREATE TABLE IF NOT EXISTS anya.account(
     sid text UNIQUE GENERATED ALWAYS AS ( generate_custom_sid(pid, 'A')) STORED,
     name text NOT NULL,
     usrname text NOT NULL UNIQUE,
-    passwd text NOT NULL UNIQUE,
+    passwd text NOT NULL,
     UNIQUE (usrname, passwd)
 );
 INSERT INTO anya.account(name, usrname, passwd) VALUES('admin', 'admin', 'admin');
+
+CREATE TABLE IF NOT EXISTS anya.user(
+    pid SERIAL PRIMARY KEY,
+    name text NOT NULL,
+    email text NOT NULL,
+    usrname text NOT NULL UNIQUE,
+    passwd text NOT NULL,
+);
 
 
 

@@ -68,6 +68,14 @@ namespace entity
         std::string usrname;
         std::string passwd;
     } account;
+
+    typedef struct User{
+        int pid;
+        std::string name;
+        std::string email;
+        std::string usrname;
+        std::string passwd;
+    }
 }
 
 template <>
@@ -110,4 +118,11 @@ struct glz::meta<entity::account>
 {
     using T = entity::account;
     static constexpr auto value = object("pid", &T::pid, "sid", &T::sid, "name", &T::name, "usrname", &T::usrname, "passwd", &T::passwd);
+};
+
+template <>
+struct glz::meta<entity::User>
+{
+    using T = entity::User;
+    static constexpr auto value = object("pid", &T::pid, "name", &T::name, "email", &T::email, "usrname", &T::usrname, "passwd", &T::passwd);
 };

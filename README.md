@@ -15,28 +15,28 @@ It is built using the following tech stack:
 
 ## Setup and installation
 
-### For Windows user:
+### For Windows users:
 
 Please setup [WSL](https://learn.microsoft.com/en-us/windows/wsl/install#prerequisites) if not done already done with the following details:
 - use version 2
-- use a debain based distro
+- use a Debian-based distro
 
-Open the linux CLI and folow the [guide](#Guide).
+Open the Linux CLI and follow the [guide](#Guide).
 
-### For Linux user:
+### For Linux users:
 
-Please check your linux distribution is based on debian if not then please lookup into setup/Makefile in the repository and find suitable packages for installation.
+Check if your Linux distribution is based on Debian if not then please lookup into setup/Makefile in the repository and find suitable packages for installation.
 
-Further [guide](#Guide) is focused towards user having Debain.
+Further [guide](#Guide) is focused on users having Debian.
 
 ### Guide:
 
 Follow the below steps:
 
-* **Step 1 : Clone**
+* **Step 1: Clone**
     
     cd to your working directory and clone the repository.
-    we will refer to working directory as \<work-dir>.
+    we will refer to the working directory as \<work-dir>.
 
     ``` bash
     cd \<work-dir>;
@@ -45,9 +45,9 @@ Follow the below steps:
     git clone https://github.com/rishiagl/anya-cxx.git 
     ```
 
-* **Step 2 : Install PostgresSQL**
+* **Step 2: Install PostgresSQL**
 
-    Install postgresSQL using the setup Makefile.
+    Install PostgreSQL using the setup Makefile.
 
     ```bash
     cd anya-cxx/setup;
@@ -56,7 +56,7 @@ Follow the below steps:
     make postgres;
     ```
 
-    now check the version of postgres installed
+    now check the version of Postgres installed
 
     ```bash
     psql -V
@@ -64,7 +64,7 @@ Follow the below steps:
 
 * **Step 3: Setup PostgresSQL**
 
-    - Change password of the postgres user created during installation.(do not confuse this user with database user, this user is a OS user).
+    - Change the password of the Postgres user created during installation. (do not confuse this user with a database user, this user is an OS user).
 
         ```bash
         sudo passwd postgres;
@@ -88,19 +88,19 @@ Follow the below steps:
         ```
     - Change config.json
 
-        In anya-cxx(root) directory you'll find a file named config.json, in line no 18 add the \<new_password> which you added in 2 steps back.
+        In anya-cxx(root) directory you'll find a file named config.json, in line no 18 add the \<new_password> which you added 2 steps back.
     
-    Now your postgresSQL is up and running with very very minimal configuration, for production use please read further blog on Securing your postgresSQL server.
+    Now your PostgreSQL is up and running with very very minimal configuration, for production use please read the further blog on Securing your PostgreSQL server.
 
 -   **Step 4: Install Web Framework and Build System**\
-    (Make Sure you are in setup directory)
+    (Make Sure you are in the setup directory)
 
     ```bash
     make install;
     ```
     
 - **Step 5: Build and Run**
-    (Assuming you are in setup directory)
+    (Assuming you are in the setup directory)
 
     - Go to build directory
         ```bash

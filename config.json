@@ -1,7 +1,7 @@
 {
     "listeners": [
         {
-          "address": "localhost",
+          "address": "0.0.0.0",
           "port": 2023,
           "https": false
         }
@@ -15,7 +15,7 @@
         "port": 5432,
         "dbname": "postgres",
         "user": "postgres",
-        "passwd": "",
+        "passwd": "Rishi_58235",
         "is_fast": false,
         "client_encoding": "",
         "number_of_connections": 1,
