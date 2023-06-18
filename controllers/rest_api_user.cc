@@ -1,5 +1,6 @@
 #include "rest_api_user.h"
 #include <string>
+#include "utils/response.hpp"
 
 using namespace rest::api;
 
@@ -17,21 +18,13 @@ void user::getUserNames(const HttpRequestPtr req)
         }
         std::string buffer = glz::write_json(arr);
 
-        auto resp = HttpResponse::newHttpResponse();
-        resp->setStatusCode(k200OK);
-        resp->addHeader("message", std::to_string(arr.size()));
-        resp->setContentTypeCode(CT_APPLICATION_JSON);
-        resp->setBody(buffer);
-        co_return resp;
+        co_return response::newResponse(k200OK, std::to_string(arr.size()), CT_APPLICATION_JSON, buffer);
     }
     catch (const drogon::orm::DrogonDbException &e)
     {
         LOG_DEBUG << "ERROR CATCHED";
         std::cerr << "error:" << e.base().what() << std::endl;
-        auto resp = HttpResponse::newHttpResponse();
-        resp->setStatusCode(k500InternalServerError);
-        resp->addHeader("message", e.base().what());
-        co_return resp;
+        co_return response::newResponse(k500InternalServerError, e.base().what());
     }
 }
 
@@ -53,10 +46,7 @@ drogon::Task<drogon::HttpResponsePtr> user::signup(const HttpRequestPtr req)
     {
         std::cerr << "JSON Deserialization error" << e.what() << '\n';
 
-        auto resp = HttpResponse::newHttpResponse();
-        resp->setStatusCode(k422UnprocessableEntity);
-        resp->addHeader("message", "User Name not Provided tag = username");
-        co_return resp;
+        co_return response::newResponse(k422UnprocessableEntity, "User Name not Provided tag = username");
     }
 
     auto db = database::getDBClient();
@@ -66,10 +56,7 @@ drogon::Task<drogon::HttpResponsePtr> user::signup(const HttpRequestPtr req)
         if (result.size() == 1)
         {
             std::cerr << "JSON Deserialization error" << e.what() << '\n';
-            auto resp = HttpResponse::newHttpResponse();
-            resp->setStatusCode(k422UnprocessableEntity);
-            resp->addHeader("message", "User Name already present");
-            co_return resp;
+            co_return response::newResponse(k422UnprocessableEntity, "User Name already present");
         }
     }
     catch (const drogon::orm::DrogonDbException &e)
@@ -80,21 +67,13 @@ drogon::Task<drogon::HttpResponsePtr> user::signup(const HttpRequestPtr req)
     try
     {
         auto result = co_await db->execSqlCoro("INSERT INTO anya.user(name, email, usrname, passwd) VALUES($1, $2, $3, $4) RETURNING pid", att.name, att.email, att.usrname, att.passwd);
-
-        auto resp = HttpResponse::newHttpResponse();
-        resp->setStatusCode(k200OK);
-        resp->addHeader("message", "User Added");
-        co_return resp;
+        co_return response::newResponse(k200OK, "User Added");
     }
     catch (const drogon::orm::DrogonDbException &e)
     {
         LOG_DEBUG << "ERROR CATCHED";
         std::cerr << "error:" << e.base().what() << std::endl;
-
-        auto resp = HttpResponse::newHttpResponse();
-        resp->setStatusCode(k500InternalServerError);
-        resp->addHeader("message", e.base().what());
-        co_return resp;
+        co_return response::newResponse(k500InternalServerError, e.base().what());
     }
 }
 
@@ -113,12 +92,7 @@ drogon::Task<drogon::HttpResponsePtr> user::signin(const HttpRequestPtr req)
     catch (const std::exception &e)
     {
         std::cerr << "JSON Deserialization error" << e.what() << '\n';
-
-        auto resp = HttpResponse::newHttpResponse();
-        resp->setStatusCode(k422UnprocessableEntity);
-        resp->addHeader("message", "User Name not Provided tag = username");
-
-        co_return resp;
+        co_return co_return response::newResponse(k422UnprocessableEntity, "User Name not Provided tag = username");
     }
 
     auto db = database::getDBClient();
@@ -128,12 +102,7 @@ drogon::Task<drogon::HttpResponsePtr> user::signin(const HttpRequestPtr req)
         if (result.size() == 0)
         {
             std::cerr << "User nOt found" << e.what() << '\n';
-
-            auto resp = HttpResponse::newHttpResponse();
-            resp->setStatusCode(k404NotFound);
-            resp->addHeader("message", "User Does not exists");
-
-            co_return resp;
+            co_return response::newResponse(k404NotFound, "User Does not exists");
         }
         else
         {
@@ -145,19 +114,11 @@ drogon::Task<drogon::HttpResponsePtr> user::signin(const HttpRequestPtr req)
             if (db_passwd != att.passwd)
             {
                 std::cerr << "Passwd is wrong" << e.what() << '\n';
-
-                auto resp = HttpResponse::newHttpResponse();
-                resp->setStatusCode(k401Unauthorized);
-                resp->addHeader("message", "Wrong Password");
-
-                co_return resp;
+                co_return response::newResponse(k401Unauthorized, "Wrong Password");
             }
             else
             {
-                auto resp = HttpResponse::newHttpResponse();
-                resp->setStatusCode(k200OK);
-                resp->addHeader("message", "User Signed in");
-                co_return resp;
+                co_return response::newResponse(k200OK, "User Signed in");
             }
         }
     }
@@ -165,10 +126,6 @@ drogon::Task<drogon::HttpResponsePtr> user::signin(const HttpRequestPtr req)
     {
         LOG_DEBUG << "ERROR CATCHED";
         std::cerr << "error:" << e.base().what() << std::endl;
-
-        auto resp = HttpResponse::newHttpResponse();
-        resp->setStatusCode(k500InternalServerError);
-        resp->addHeader("message", e.base().what());
-        co_return resp;
+        co_return response::newResponse(k500InternalServerError, e.base().what());
     }
 }
