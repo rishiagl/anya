@@ -2,12 +2,11 @@
 
 [![Gitter](https://img.shields.io/gitter/room/DAVFoundation/DAV-Contributors.svg?style=flat-square)](https://matrix.to/#/!XPNMuvuskaGFEgmzjD:gitter.im?via=gitter.im)
 
-A personal assistant for entrepreneurs, Anya helps entrepreneurs with their daily tasks.
-She can manage enterprise resources, answer inquiries, or streamline employees' workloads.
+Anya is the foundation for all my projects. I want to model her as an ideal backend infrastructure for all my personal projects and as a reference for all other complex projects requiring a dedicated backend.
 
-In this repository, you will find the backend infrastructure that keeps her running.
+The inspiration for this long-term project came after meddling with many different Web frameworks and tools. Those tools used to contain so much magic and wrappers around core functionalities that after hours of indulgence, I was able to master them but wasn't able to master the underlying technology, therefore to overcome that, I decided to pick up a small and fast framework like drogon and build up a basic but efficient backend infrastructure that could host all my projects. I also aim to learn more about Modern C++ programming and System design through this project.
 
-It is built using the following tech stack:
+She is built using the following tech stack:
 * C++20
 * Drogon Web Framework
 * Postgresql
