@@ -2,9 +2,9 @@
 
 [![Gitter](https://img.shields.io/gitter/room/DAVFoundation/DAV-Contributors.svg?style=flat-square)](https://matrix.to/#/!XPNMuvuskaGFEgmzjD:gitter.im?via=gitter.im)
 
-Anya is the foundation for all my projects. I want to model her as an ideal backend infrastructure for all my personal projects and as a reference for all other complex projects requiring a dedicated backend.
+Anya is the foundation for all my projects. I aim to create it as an ideal backend infrastructure for my personal projects as well as a model for all other sophisticated projects that require a dedicated backend.
 
-The inspiration for this long-term project came after meddling with many different Web frameworks and tools. Those tools used to contain so much magic and wrappers around core functionalities that after hours of indulgence, I was able to master them but wasn't able to master the underlying technology, therefore to overcome that, I decided to pick up a small and fast framework like drogon and build up a basic but efficient backend infrastructure that could host all my projects. I also aim to learn more about Modern C++ programming and System design through this project.
+The idea for this long-term project arose from experimenting with various Web frameworks and technologies. Those tools contained so much magic and wrappers around core functionalities that after hours of indulgence, I was able to master them but not the underlying technology; to overcome this, I decided to pick up a small and fast framework like drogon and build up a basic but efficient backend infrastructure that could host all my projects. In addition, I want to learn more about modern C++ programming and System design.
 
 She is built using the following tech stack:
 * C++20
