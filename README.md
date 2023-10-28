@@ -2,11 +2,7 @@
 
 [![Gitter](https://img.shields.io/gitter/room/DAVFoundation/DAV-Contributors.svg?style=flat-square)](https://matrix.to/#/!XPNMuvuskaGFEgmzjD:gitter.im?via=gitter.im)
 
-Anya is the foundation for all my projects. I aim to create it as an ideal backend infrastructure for my personal projects as well as a model for all other sophisticated projects that require a dedicated backend.
-
-The idea for this long-term project arose from experimenting with various Web frameworks and technologies. Those tools contained so much magic and wrappers around core functionalities that after hours of indulgence, I was able to master them but not the underlying technology; to overcome this, I decided to pick up a small and fast framework like drogon and build up a basic but efficient backend infrastructure that could host all my projects. In addition, I want to learn more about modern C++ programming and System design.
-
-She is built using the following tech stack:
+Tech stack:
 * C++20
 * Drogon Web Framework
 * Postgresql
@@ -16,7 +12,7 @@ She is built using the following tech stack:
 
 ### For Windows users:
 
-Please setup [WSL](https://learn.microsoft.com/en-us/windows/wsl/install#prerequisites) if not done already done with the following details:
+Please set [WSL](https://learn.microsoft.com/en-us/windows/wsl/install#prerequisites) if not done already done with the following details:
 - use version 2
 - use a Debian-based distro
 
